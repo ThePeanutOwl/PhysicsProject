@@ -1,8 +1,8 @@
 #include <SFML/Graphics.hpp>
-
+sf::CircleShape circle(200);
 int main()
 {
-    auto window = sf::RenderWindow(sf::VideoMode({1920u, 1080u}), "CMake SFML Project");
+    auto window = sf::RenderWindow(sf::VideoMode({1920u, 1080u}), "Phys");
     window.setFramerateLimit(144);
 
     while (window.isOpen())
@@ -16,6 +16,7 @@ int main()
         }
 
         window.clear();
+
         window.display();
     }
 }
